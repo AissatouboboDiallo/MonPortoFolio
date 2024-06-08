@@ -222,6 +222,17 @@ body {
      width: max-content;
      margin-right: 20px;
 }
+.content_competences aside:nth-child(4) div:last-child a {
+    color: black;
+}
+.content_competences aside:nth-child(4) div:last-child a:hover {
+    color: rgb(163, 192, 233);
+
+}
+.content_competences aside:nth-child(4)div:last-child a:active {
+    color: blue;
+
+}
 .content_competences aside:nth-child(5) {
     width: 100%;
     gap:16px;
