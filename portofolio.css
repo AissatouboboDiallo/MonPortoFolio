@@ -1,0 +1,338 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid_parent {
+    display: flex ;
+   
+    flex-direction: row;
+}
+
+.mon_profil {
+  width: 600px;  
+    
+}
+
+.competences {
+   width: 500px;
+   
+}
+ .mon_profil, .competences {
+ height: 90%;
+}
+
+body {
+    background-color:rgb(255, 255, 255);
+    color:black;
+    height: 100vh;
+    background-image: url(IMG/plan3.png);
+    background-size: 100% 100%;
+    width: 100%;
+    backdrop-filter: blur(2px);
+} 
+
+/* Mon profil */
+.container_profil {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: auto;
+    overflow-y: auto;   
+}
+.display-flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mon_profil aside:nth-child(2) strong {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.class_span {
+    color: blue;
+    font-weight: bold;
+    text-shadow: 0.4px 0.4px black;
+   
+}
+.class_h5 {
+    color: black;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px rgb(138, 130, 130);
+    font-size: 25px;
+}
+.trait {
+    width: 80%;
+    height: 2px;
+    margin-top:10px;
+    border: 2px solid rgb(5, 5, 5);
+    border-width: 1.5px 0px 0px 0px;
+    padding-bottom: 5px;
+} 
+
+
+.container_profil aside:first-child div {
+   width: 100%;
+
+}
+
+.sous_titre h5::first-letter {
+    color: blue;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px black;
+    font-size: 150%;
+}
+.display-flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.display-flex-row div{
+    
+    padding: 0.2em;
+}
+
+#file-hcss , #file-js , #file-mysql {
+    border-radius: 50%;
+    border: 1px solid blue;
+    border-width: 4px 4px 4px 4px;
+    width:70px;
+    height: 70px;
+    margin-left:20px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(6, 5, 5); 
+    text-align: center;
+    padding-top: 7% ;
+    font-weight: bold;
+}
+
+#file-js { 
+    border-left: 4px solid white;
+    border-top: 4px solid white;    
+}
+#file-mysql {
+    border-left: 4px solid white;
+    margin-left: 20px;
+}
+.overflow {
+    height: 270px; 
+    width: 100%;
+    margin-left: px;
+  
+}
+.container_profil aside:first-child div:nth-child(3) div:nth-child(6) ul li {
+    list-style-type: circle;
+    font-weight: 400;
+    font-size: 18px;
+}
+.container_profil aside:first-child div:nth-child(3) div:last-child a {
+    color: black;
+    font-weight: bold;
+
+}
+.container_profil aside:first-child div:nth-child(3) div:last-child a:hover {
+    color: rgb(105, 105, 255);
+
+}
+.container_profil aside:first-child div:nth-child(3) div:last-child a:active {
+    color: blue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Competences */
+.content_competences {
+    margin-top: 2%;
+    height: 650px;
+    gap:20px;
+}
+.content_competences aside {
+    width: 100%;
+}
+.presentation {
+
+}
+.bordure {
+
+    box-shadow: 1px 1px 1px 1px rgba(125, 125, 125, 0.5); 
+    border-radius: 10px;        
+    border-top: 1px solid rgba(143, 141, 141, 0.5) ;
+}
+.presentation aside {
+    display:  flex;
+    flex-flow: column wrap;
+    width:  45%;
+    margin : 0 auto;
+    color:black;
+    padding: 1em;
+}
+
+.presentation aside div {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin : 0 auto;
+  
+}
+
+.content_competences aside:nth-child(3) {
+    
+    width: 70%;
+    margin: 0 auto;
+}
+.content_competences aside:nth-child(3) div  h5 {
+    font-size: 22px;
+}
+.content_competences aside:nth-child(4) div {
+    width: 40%;
+    
+}
+
+.content_competences aside:nth-child(4) div:last-child {
+     padding:  0.3em;
+     font-weight: 300;
+     font-size: 17px;
+     border-radius: 20px;
+     width: max-content;
+     margin-right: 20px;
+}
+.content_competences aside:nth-child(5) {
+    width: 100%;
+    gap:16px;
+    padding-bottom: 1em;
+}
+.content_competences aside:nth-child(5) div  {
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+.content_competences aside:nth-child(5) div div {
+    width: 50%;
+    
+}
+.content_competences aside:nth-child(5) div div:first-child {
+  font-size: 18px;
+    
+}
+ .content_competences aside:nth-child(6)  .class_h5::first-letter {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px black;
+    font-size: 150%;
+} 
+.content_competences aside:nth-child(6)  .display-flex-column .display-flex-row  {
+    width: 100%;
+    align-items: start;  
+   
+}
+.content_competences aside:nth-child(6)  .display-flex-column .display-flex-row h5 {
+    width: 40%;
+    font-size: 600;
+}
+.content_competences aside:nth-child(6)  .display-flex-column  div:last-child  {
+  width: 100%;  
+}
+#file1{
+    width:65%;
+    height: 25px;
+}
+.content_competences aside:last-child {
+    padding-bottom: 1em;
+}
+.content_competences aside:last-child div {
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+.container_image {
+    padding: 0.5em;
+    height: 280px;
+   border : 1px outset #ffffff80; 
+}
+
+.image {
+    margin-left: 25% ;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+   
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(78, 74, 74, 0.767);
+    border-radius: 20px;
+   
+  }
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1e0;
+    
+  } 
+
+
+@media screen and (max-width:900px) {
+
+    .grid_parent {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .mon_profil , .competences {
+        width: 100%;
+    }
+
+    .container_image {
+        height: 20%;
+    }
+    .presentation {
+        flex-direction: column;
+        gap : 20px;
+    }
+    .presentation aside {
+        width: max-content;
+    }
+
+    .content_competences aside:nth-child(3) {
+        flex-direction: column;
+    }
+
+    .content_competences aside:nth-child(4) {
+        flex-direction: column;
+    } 
+}
